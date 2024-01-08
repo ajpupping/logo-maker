@@ -1,0 +1,14 @@
+{
+  "name": "logo-maker",
+  "version": "1.0.0",
+  "description": "A command-line application that creates a logo based on user input",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^9.2.12"
+  }
+}
