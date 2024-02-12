@@ -21,3 +21,7 @@ This project was created for educational purposes and does not have a license.
 I used [this guide](https://gist.github.com/lmcneel/45594e550a3403d589bdcaad38138a83) to remove node modules that were added by mistake. 
 
 I used [this guide](https://developer.mozilla.org/en-US/docs/Web/SVG) to learn about SVG images. 
+
+## Walkthrough 
+
+[Click here](https://drive.google.com/file/d/17he_G4KEDU6LauXhBjeVukRcUzC-vp3j/view?usp=drive_link) to view a walkthrough video demonstrating the functionality of this application. 
