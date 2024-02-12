@@ -1,5 +1,6 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
+const { Circle, Square, Triangle } = require('./lib/shapes');
 
 // array of questions for user
 const questions = () => {
@@ -31,14 +32,22 @@ const questions = () => {
 
 // Function to generate SVG
 const generateSVG = (answers) => {
-    const shapes = {
-        circle: `<circle cx="150" cy="100" r="80" fill="${answers.shapeColor}" />`,
-        square: `<rect x="35" y="10" width="230" height="180" fill="${answers.shapeColor}" />`,
-        triangle:`<polygon points="150,10 250,190 50,190" fill="${answers.shapeColor}" />`,
+    let shapeSVG;
+    switch (answers.shape) {
+        case 'circle':
+            shapeSVG = new Circle(answers.shapeColor).toSvg();
+            break;
+        case 'square':
+            shapeSVG = new Square(answers.shapeColor).toSvg();
+            break;
+        case 'triangle':
+            shapeSVG = new Triangle(answers.shapeColor).toSvg();
+            break;
     }
+
     return `
     <svg width="300" height="200">
-    ${shapes[answers.shape]}
+    ${shapeSVG}
     <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="${answers.textColor}" font-size="64">${answers.text}</text>
     </svg>
     `;
