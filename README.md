@@ -2,10 +2,15 @@
 A command-line application that creates a logo based on user input. 
 
 ## Description 
+The goal of this project was to create a command line application which takes in user input to generate an SVG logo.  The secondary goal was to use Jest to test the functionality of the code. 
+
+I learned how to use classes to create the different shapes, so that I can easily make modifications without changing the base code. 
 
 ## Installation 
+Before using this application, enter "npm i" into the integrated terminal to install the necessary node modules. 
 
 ## Usage 
+To use this command line application, enter "node index.js" into the integrated terminal and then answer the prompts. The application will generate and svg file after all of the prompts have been answered. 
 
 ## License 
 
